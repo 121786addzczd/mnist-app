@@ -106,3 +106,13 @@ pythonの実行
 ```shell
 poetry run python <実行したいpythonファイル名>
 ```
+
+scikit-learnの学習結果をONNX形式で保存するためのライブラリインストール
+```shell
+poetry add skl2onnx@1.15
+```
+
+packagingライブラリインストール
+```shell
+poetry add packaging@21.3
+```
