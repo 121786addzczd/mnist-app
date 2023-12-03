@@ -126,3 +126,33 @@ ONNX Runtimeで推論するために必要なライブラリを導入
 ```shell
 poetry add onnxruntime
 ```
+
+
+### FastAPIの準備
+
+FastAPIのディレクトリ作成
+```shell
+mkdir python-web-app
+```
+
+fastapiのディレクトリ移動
+```
+cd python-web-app
+```
+
+python-web-appディレクトリ内で以下コマンド実行（全てEnter）
+```
+poetry init
+```
+pyproject.tomlが作成されます
+
+使用するpythonのパスを指定(which pythonで見れる)
+```shell
+poetry env use /Users/<ユーザー名>/.asdf/shims/python
+```
+
+pyproject.tomlのpythonバージョンになっているか確認
+```shell
+poetry run python --version
+```
+
