@@ -1,4 +1,5 @@
 import numpy
+import onnxruntime
 from PIL import Image
 
 pil_image = Image.open('sample.png')
@@ -26,3 +27,16 @@ print(reshaped_arr)
 input = [reshaped_arr.astype(numpy.float32)]
 print("input")
 print(input)
+
+# predict
+
+onnx_session = onnxruntime.InferenceSession("model.onnx")
+
+output = onnx_session.run(['probabilities'], {'float_input': input})
+print("output")
+print(output)
+
+# outputの内容を綺麗に取り出す
+result = output[0][0]
+print("result")
+print(result)

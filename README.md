@@ -121,3 +121,8 @@ poetry add packaging@21.3
 ```shell
 poetry add Pillow@9.2.0
 ```
+
+ONNX Runtimeで推論するために必要なライブラリを導入
+```shell
+poetry add onnxruntime
+```
