@@ -26,3 +26,18 @@ pyproject.tomlのpythonバージョンになっているか確認
 ```shell
 poetry run python --version
 ```
+
+FastAPIのライブラリを導入
+```shell
+poetry add fastapi
+```
+
+FastAPIサーバーを起動するために必要なライブラリ導入
+```shell
+poetry add uvicorn
+```
+
+FastAPIサーバーを起動
+```shell
+poetry run uvicorn main:app --reload
+```
