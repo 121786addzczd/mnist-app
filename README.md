@@ -116,3 +116,8 @@ packagingライブラリインストール
 ```shell
 poetry add packaging@21.3
 ```
+
+画像処理でよく使用するライブラリを導入
+```shell
+poetry add Pillow@9.2.0
+```
